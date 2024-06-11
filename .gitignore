@@ -1,0 +1,7 @@
+*.bak
+*/*.bak
+*/*/*.bak
+docxs/~*
+docxs/*/~*
+docxs/*tmp
+target
