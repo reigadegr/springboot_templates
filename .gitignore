@@ -5,3 +5,4 @@ docxs/~*
 docxs/*/~*
 docxs/*tmp
 target
+.idea
