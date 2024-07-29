@@ -11,7 +11,7 @@ class UserServiceImpl : UserService {
     @Autowired
     private lateinit var userMapper: UserMapper
 
-    override fun findByUserIdAndPassword(studentId: String, password: String): User? {
-        return userMapper.findByUserIdAndPassword(studentId, password)
+    override fun findByUserIdAndPassword(userId: String, password: String): User? {
+        return userMapper.findByUserIdAndPassword(userId, password)
     }
 }

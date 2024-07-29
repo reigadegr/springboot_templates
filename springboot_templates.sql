@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.44, for Win64 (x86_64)
 --
--- Host: localhost    Database: uniselect
+-- Host: localhost    Database: springboot_templates
 -- ------------------------------------------------------
 -- Server version	5.7.44-log
 
@@ -14,6 +14,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
 --
 -- Table structure for table `users`
 --
@@ -23,7 +24,7 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `student_id` varchar(255) DEFAULT NULL,
+  `user_id` varchar(255) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `major` varchar(255) DEFAULT NULL,
@@ -41,9 +42,6 @@ LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` VALUES (1,'0','张三','123456','计算机科学与技术','2021级1班','a');
 INSERT INTO `users` VALUES (2,'1','1','1','1','1','a');
-INSERT INTO `users` VALUES (49,'20211203583','某某某','111111','软件工程','2021级2班','a');
-INSERT INTO `users` VALUES (50,'aaxx','','44','','','a');
-INSERT INTO `users` VALUES (51,'5','','77','','','a');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -56,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-05 22:25:40
+-- Dump completed on 2024-07-29 17:33:31

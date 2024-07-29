@@ -2,13 +2,8 @@ server:
   port: 9090
 
 spring:
-  mvc:
-    static-path-pattern=/resources/static/**
   datasource:
-    url: jdbc:mysql://localhost:3306/uniselect?characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://localhost:3306/springboot_templates?characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 1234
-  devtools:
-    restart:
-      enabled: true

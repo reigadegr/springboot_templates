@@ -1,2 +1,2 @@
-mysqldump -uroot -p1234 uniselect --extended-insert=FALSE > uniselect.sql && echo "I dump uniselect database successfully !" || echo "failure"
+mysqldump -uroot -p1234 springboot_templates --extended-insert=FALSE > springboot_templates.sql && echo "I dump springboot_templates database successfully !" || echo "failure"
 timeout /t 1

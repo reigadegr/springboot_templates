@@ -15,8 +15,8 @@ class UserController {
 
     //CrossOrigin注解为允许接受其他端口的请求(如果是跨域请求，默认不同端口禁止通信。设置为*则为允许任意端口对此接口发起请求)
     @CrossOrigin(origins = ["*"])
-    @RequestMapping(value = ["/login/{studentId}/{password}"], method = [RequestMethod.GET])
-    fun findByUserIdAndPassword(@PathVariable studentId: String, @PathVariable password: String): User? {
-        return userService.findByUserIdAndPassword(studentId, password)
+    @RequestMapping(value = ["/login/{userId}/{password}"], method = [RequestMethod.GET])
+    fun findByUserIdAndPassword(@PathVariable userId: String, @PathVariable password: String): User? {
+        return userService.findByUserIdAndPassword(userId, password)
     }
 }
