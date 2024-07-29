@@ -10,8 +10,9 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <kotlin.version>1.9.22</kotlin.version>
     </properties>
     <parent>
@@ -19,7 +20,7 @@
             只需要在<dependency>标签中声明即可，而不用关心版本适配问题-->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.18</version>
+        <version>3.3.2</version>
         <!--查找顺序：relativePath元素中的地址–本地仓库–远程仓库,设定一个空值将始终从仓库中获取，不从本地路径获取-->
         <relativePath/>
     </parent>
@@ -67,7 +68,7 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.2.2</version>
+            <version>3.0.3</version>
         </dependency>
 
         <!-- <dependency> -->
@@ -187,8 +188,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <release>${java.version}</release>
                 </configuration>
             </plugin>
         </plugins>
